@@ -39,17 +39,17 @@ label {
 </style>
 </head>
 <body>
-<center>
-</br></br></br></br></br>
+<a href="home" style="text-align:right;"><h1>Home</h1></a>
+<br>
+<br>
 <div class="container">
 <div class="jumbotron">
 <form entype="multipart/form-data" method="POST">
 		{%  csrf_token %}
-		{{ user_form.as_p}}
-		<input type="submit" name="" value="Register">
+		{{ post_form.as_p}}
+		<input style = "background-color:powderblue;"type="submit" name="" value="Post">
 		</form>
 	</div>
      </div>
-</center>
 </body>
 </html>
