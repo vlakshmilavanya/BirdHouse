@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Blogs</title>
+</head>
+<body style="background-image:url('static/images/bg_login.jpg')";>
+
+
+
+<h1>Blogs</h1>
+<table border="1" width="600">
+<tr>
+<td>Title</td>
+<td>Slug</td>
+<td>Body</td>
+<td>Publish</td>
+<td>Created</td>
+<td>Updated</td>
+<td>Status</td>
+</tr>
+
+{% for blog in allblogs %}
+<tr>
+<td>{{ blog.title }}</td>
+<td>
+{{ blog.slug }}</td>
+<td>{{ blog.body }}</td>
+<td>{{ blog.publish }}</td>
+<td>{{ blog.created }}</td>
+<td>{{ blog.updated }}</td>
+<td>{{ blog.status }}</td>
+</tr>
+{% endfor %}
+</table>
+
+
+</body>
+</html>
+
